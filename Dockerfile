@@ -1,6 +1,8 @@
-FROM ubuntu:15.10
+FROM ubuntu:trusty
 
 MAINTAINER Gerco Dries <gerco@gdries.nl>
+
+env DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 
@@ -16,7 +18,7 @@ ADD debian src/netatalk-3.1.8/debian
 ADD build-and-upload.sh /root/
 
 WORKDIR /src/netatalk-3.1.8
-RUN DEBIAN_FRONTEND=noninteractive mk-build-deps -i -r -t "apt-get -qq --no-install-recommends"
+RUN mk-build-deps -i -r -t "apt-get -qq --no-install-recommends"
 
 CMD /root/build-and-upload.sh
 

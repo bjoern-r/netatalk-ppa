@@ -34,14 +34,17 @@ LDFLAGS += $(HARDENING_LDFLAGS)
 
 
 DEB_CONFIGURE_EXTRA_FLAGS := \
-				--prefix=/usr \
-				--localstatedir=/var/lib \
-				--sysconfdir=/etc/netatalk \
-				--with-cracklib \
-				--with-libevent=no \
-				--with-pam-confdir=/etc/pam.d \
-				--with-dbus-sysconf-dir=/etc/dbus-1/system.d \
-				--with-init-style=debian-sysv
+        --with-init-style=debian-systemd \
+        --without-libevent \
+        --without-tdb \
+        --with-cracklib \
+        --enable-krbV-uam \
+	--prefix=/usr \
+        --with-pam-confdir=/etc/pam.d \
+        --with-dbus-sysconf-dir=/etc/dbus-1/system.d \
+	--sysconfdir=/etc/netatalk \
+	--localstatedir=/var/lib \
+        --with-tracker-pkgconfig-version=1.0
 
 CDBS_DEPENDS = netbase, libpam-modules
 CDBS_SUGGESTS = texlive-base-bin, groff, quota, db4.8-util

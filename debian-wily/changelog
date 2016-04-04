@@ -1,16 +1,23 @@
-netatalk (3.1.8-0ubuntu1ppa2~trusty) trusty; urgency=low
+netatalk (3.1.8-0ppa3~wily) wily; urgency=low
 
-  * New upstream
+  * New upstream release
+  * Rebuilt for Ubuntu 15.10 (wily)
 
- -- Bjoern PPA <bjoernppa@nixda.biz>  Mon, 04 Apr 2016 20:47:24 +0200
+ -- Gerco Dries <gerco@gdries.nl>  Tue, 02 Feb 2016 22:06:00 -0500
 
-netatalk (3.1.7-0ubuntu1ppa1~trusty) trusty; urgency=low
+netatalk (3.1.7-0ubuntu1ppa1~vivid) vivid; urgency=low
 
   * New upstream release
 
  -- Igor Kurochkin <igor.itl@gmail.com>  Sat, 02 Nov 2014 20:00:00 +0300
 
-netatalk (3.1.7-0ubuntu1ppa1~saucy) saucy; urgency=low
+netatalk (3.1.7-0ubuntu1ppa1~utopic) utopic; urgency=low
+
+  * New upstream release
+
+ -- Igor Kurochkin <igor.itl@gmail.com>  Sat, 02 Nov 2014 20:00:00 +0300
+
+netatalk (3.1.7-0ubuntu1ppa1~trusty) trusty; urgency=low
 
   * New upstream release
 
